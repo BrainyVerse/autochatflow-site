@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Politique de confidentialité – [votre-domaine.com]</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index,follow">
+  <!-- SEO multilingue -->
+  <link rel="alternate" href="?lang=fr" hreflang="fr">
+  <link rel="alternate" href="?lang=en" hreflang="en">
+  <style>
+    :root{--w:860px}
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;max-width:var(--w);margin:40px auto;padding:0 16px;line-height:1.6}
+    header{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    h1{margin:0 0 .2em 0}
+    .lang{display:flex;gap:8px}
+    .btn{border:1px solid #ccc;border-radius:999px;padding:6px 12px;background:#f7f7f7;cursor:pointer;font-size:.95rem}
+    .btn[aria-pressed="true"]{border-color:#333;background:#fff;font-weight:600}
+    hr{margin:28px 0}
+    small,.muted{color:#555}
+    footer{margin-top:40px;font-size:.9em;color:#555}
+    a{word-break:break-all}
+    /* Impression : FR par défaut */
+    @media print{.lang,.skip{display:none}}
+  </style>
+</head>
+<body>
+<header>
+  <div>
+    <h1 id="title">Politique de confidentialité <small class="muted">(WhatsApp + n8n)</small></h1>
+    <p class="muted" id="subtitle">Cette page décrit comment [votre-domaine.com] traite vos données.</p>
+  </div>
+  <nav class="lang" aria-label="Sélection de la langue">
+    <button class="btn" id="btn-fr" aria-pressed="true">FR</button>
+    <button class="btn" id="btn-en" aria-pressed="false">EN</button>
+  </nav>
+</header>
+
+<p class="skip"><a href="#fr" id="skip">Aller au contenu</a></p>
+
+<!-- ========= CONTENU FR ========= -->
+<main id="fr" data-lang="fr">
+  <p><strong>Responsable</strong> : [votre-domaine.com]. Contact : 
+    <a href="mailto:[contact@votre-domaine.com]">[contact@votre-domaine.com]</a></p>
+
+  <h2>Données traitées</h2>
+  <p>Numéro WhatsApp, métadonnées de messages, contenus nécessaires aux échanges, logs techniques des webhooks (n8n), identifiants techniques (IP, user-agent).</p>
+
+  <h2>Finalités</h2>
+  <p>Support client, notifications transactionnelles (commandes, rendez-vous), communications marketing <em>opt-in</em> uniquement.</p>
+
+  <h2>Bases légales</h2>
+  <p>Exécution du contrat, consentement (opt-in WhatsApp), intérêt légitime (qualité de service et sécurité).</p>
+
+  <h2>Destinataires & sous-traitants</h2>
+  <p>Meta Platforms/WhatsApp, hébergeur, prestataires techniques (dont n8n si Cloud). Accès limité au strict nécessaire.</p>
+
+  <h2>Transferts hors UE</h2>
+  <p>Encadrés par des garanties appropriées (ex. Clauses Contractuelles Types de Meta).</p>
+
+  <h2>Durées de conservation</h2>
+  <p>Logs techniques : 90 jours. Données clients actives : 24 mois après la dernière interaction, puis suppression/anonymisation.</p>
+
+  <h2>Sécurité</h2>
+  <p>Mesures techniques et organisationnelles raisonnables (contrôle d’accès, chiffrement en transit, limitation des logs).</p>
+
+  <h2>Droits RGPD</h2>
+  <p>Accès, rectification, effacement, opposition, limitation, portabilité. Exercez vos droits via 
+    <a href="mailto:[contact@votre-domaine.com]">[contact@votre-domaine.com]</a>. Réclamation : CNIL.</p>
+
+  <p><small>Dernière mise à jour : 11/08/2025</small></p>
+</main>
+
+<!-- ========= CONTENT EN ========= -->
+<main id="en" data-lang="en" hidden>
+  <p><strong>Controller</strong>: [votre-domaine.com]. Contact: 
+    <a href="mailto:[contact@votre-domaine.com]">[contact@votre-domaine.com]</a></p>
+
+  <h2>Data processed</h2>
+  <p>WhatsApp number, messaging metadata, content as needed to provide service, webhook logs (n8n), technical identifiers (IP, user-agent).</p>
+
+  <h2>Purposes</h2>
+  <p>Customer support, transactional notifications (orders, appointments), marketing communications with prior opt-in.</p>
+
+  <h2>Legal bases</h2>
+  <p>Contract performance, consent (WhatsApp opt-in), legitimate interest (service quality and security).</p>
+
+  <h2>Recipients & processors</h2>
+  <p>Meta Platforms/WhatsApp, hosting provider, technical service providers (including n8n if Cloud). Access is strictly limited to what is necessary.</p>
+
+  <h2>International transfers</h2>
+  <p>Protected by appropriate safeguards (e.g., Standard Contractual Clauses of Meta).</p>
+
+  <h2>Retention</h2>
+  <p>Technical logs: 90 days. Active customer data: 24 months after last interaction, then deletion/anonymization.</p>
+
+  <h2>Security</h2>
+  <p>Reasonable technical and organizational measures (access control, in-transit encryption, limited logging).</p>
+
+  <h2>Data subject rights</h2>
+  <p>Access, rectification, erasure, objection, restriction, portability. Exercise your rights via 
+    <a href="mailto:[contact@autochatflow.dpdns.org]">[contact@autochatflow.dpdns.org]</a>. You may lodge a complaint with your supervisory authority.</p>
+
+  <p><small>Last update: 11/08/2025</small></p>
+</main>
+
+<footer>© 2025 [autochatflow.dpdns.org]</footer>
+
+<script>
+(function() {
+  const qs = new URLSearchParams(location.search);
+  const prefer = (qs.get('lang') || '').toLowerCase();
+  const userLang = (navigator.language || 'fr').slice(0,2);
+  const lang = (prefer === 'en' || prefer === 'fr') ? prefer : (userLang === 'en' ? 'en' : 'fr');
+
+  const fr = document.getElementById('fr');
+  const en = document.getElementById('en');
+  const title = document.getElementById('title');
+  const subtitle = document.getElementById('subtitle');
+  const btnFr = document.getElementById('btn-fr');
+  const btnEn = document.getElementById('btn-en');
+
+  function setLang(l) {
+    const isFR = l === 'fr';
+    fr.hidden = !isFR;
+    en.hidden = isFR;
+    document.documentElement.lang = isFR ? 'fr' : 'en';
+    btnFr.setAttribute('aria-pressed', isFR ? 'true' : 'false');
+    btnEn.setAttribute('aria-pressed', isFR ? 'false' : 'true');
+    title.textContent = isFR ? 'Politique de confidentialité (WhatsApp + n8n)' : 'Privacy Policy (WhatsApp + n8n)';
+    subtitle.textContent = isFR
+      ? 'Cette page décrit comment [votre-domaine.com] traite vos données.'
+      : 'This page explains how [votre-domaine.com] processes your data.';
+    // mettre à jour les balises alternates pour SEO côté client (best-effort)
+    const alts = document.querySelectorAll('link[rel="alternate"]');
+    alts.forEach(a => {
+      const isFr = a.getAttribute('hreflang') === 'fr';
+      a.setAttribute('href', isFr ? '?lang=fr' : '?lang=en');
+    });
+    // pushState pour URL propre
+    const url = new URL(location.href);
+    url.searchParams.set('lang', l);
+    history.replaceState({}, '', url);
+  }
+
+  btnFr.addEventListener('click', () => setLang('fr'));
+  btnEn.addEventListener('click', () => setLang('en'));
+  setLang(lang);
+})();
+</script>
+
+<noscript>
+  <!-- Si JavaScript est désactivé, les deux langues restent visibles. -->
+</noscript>
+</body>
+</html>
