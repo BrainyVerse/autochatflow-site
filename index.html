@@ -2,255 +2,187 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Politique de confidentialité – autochatflow.dpdns.org</title>
+  <title>AutoChatFlow AI – Automatisation WhatsApp & n8n à Mulhouse</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="AutoChatFlow AI conçoit des automatisations WhatsApp Business et n8n pour dirigeants, PME et e-commerçants. Basé à Mulhouse. SIRET 88426018300014.">
   <meta name="robots" content="index,follow">
-  <meta name="description" content="Politique de confidentialité pour l’automatisation WhatsApp + n8n d’autochatflow.dpdns.org.">
-
-  <!-- Favicons -->
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="favicon.png">
-
-  <!-- Open Graph / Twitter (remplace l’URL absolue ci-dessous par ton URL GitHub Pages si tu ajoutes un preview dédié) -->
-  <meta property="og:title" content="Politique de confidentialité – autochatflow.dpdns.org">
-  <meta property="og:description" content="Page de politique de confidentialité pour WhatsApp + n8n.">
+  <!-- Open Graph -->
+  <meta property="og:title" content="AutoChatFlow AI – Automatisation WhatsApp & n8n">
+  <meta property="og:description" content="Gagnez du temps et de l’argent grâce à l’automatisation WhatsApp + n8n. Audit gratuit.">
   <meta property="og:type" content="website">
-  <!-- Remplacer par : https://ton-username.github.io/ton-repo/preview.png si tu ajoutes une image de prévisualisation -->
-  <meta property="og:image" content="favicon.png">
+  <meta property="og:url" content="https://autochatflow.dpdns.org/">
+  <meta property="og:image" content="https://autochatflow.dpdns.org/assets/og.png">
+  <meta property="og:locale" content="fr_FR">
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
 
-  <style>
-    /* --------- Design System --------- */
-    :root{
-      --bg:#ffffff;--text:#0f172a;--muted:#64748b;--line:#e2e8f0;--surface:#f8fafc;
-      --brand:#2563eb;--brand-ghost:#eff6ff;--maxw:920px;--radius:14px;
-    }
-    @media (prefers-color-scheme: dark){
-      :root{--bg:#0b1020;--text:#e5e7eb;--muted:#94a3b8;--line:#1f2937;--surface:#0f172a;--brand:#60a5fa;--brand-ghost:#0b1a33;}
-    }
-    /* --------- Base --------- */
-    *,*::before,*::after{box-sizing:border-box}
-    html,body{margin:0;padding:0}
-    body{
-      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      background:var(--bg); color:var(--text); line-height:1.65;
-      display:flex; flex-direction:column; min-height:100svh;
-    }
-    .wrap{width:100%; max-width:var(--maxw); margin:0 auto; padding:28px 16px}
-    h1{margin:0 0 .2em; font-weight:750; letter-spacing:.2px}
-    h2{margin:22px 0 8px}
-    .muted{color:var(--muted)}
-    a{color:var(--brand); text-decoration:none} a:hover{text-decoration:underline}
-    /* --------- Header & Language --------- */
-    header .top{display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap}
-    .lang{display:flex; gap:8px}
-    .btn{
-      border:1px solid var(--line); background:#fff; color:var(--text);
-      border-radius:999px; padding:6px 12px; cursor:pointer;
-    }
-    @media (prefers-color-scheme: dark){.btn{background:#101826}}
-    .btn[aria-pressed="true"]{border-color:var(--brand); box-shadow:0 0 0 3px var(--brand-ghost); font-weight:600}
-    /* --------- Cards --------- */
-    .card{background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:22px}
-    /* --------- Footer --------- */
-    footer{margin-top:auto; background:var(--surface); border-top:1px solid var(--line)}
-    .footer-grid{display:grid; gap:20px; grid-template-columns:1.2fr .8fr .8fr}
-    .footer-title{font-weight:700; margin-bottom:6px}
-    .legal{font-size:.9rem; color:var(--muted); border-top:1px solid var(--line); padding-top:14px; margin-top:14px}
-    @media (max-width:780px){.footer-grid{grid-template-columns:1fr} header .top{flex-direction:column; align-items:flex-start}}
-    /* --------- Back to top --------- */
-    #backToTop{
-      position:fixed; right:24px; bottom:24px; width:48px; height:48px; border-radius:50%;
-      display:none; align-items:center; justify-content:center; border:none; cursor:pointer;
-      background:var(--brand); color:#fff; font-size:20px; box-shadow:0 4px 8px rgba(0,0,0,.2); transition:opacity .3s
-    }
-    #backToTop:hover{opacity:.85}
-  </style>
+  <link rel="icon" href="/assets/favicon.ico">
+  <link rel="apple-touch-icon" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/assets/style.css">
+  <script>
+    // simple FR/EN toggle using query param ?lang=en
+    (function(){
+      const l=(new URLSearchParams(location.search).get('lang')||navigator.language||'fr').slice(0,2);
+      document.documentElement.lang=(l==='en')?'en':'fr';
+    })();
+  </script>
 </head>
 <body>
-
-<header>
-  <div class="wrap top">
-    <div>
-      <h1 id="title">Politique de confidentialité</h1>
-      <p class="muted" id="subtitle">Cette page décrit comment autochatflow.dpdns.org traite vos données.</p>
-    </div>
-    <nav class="lang" aria-label="Sélecteur de langue">
-      <button class="btn" id="btn-fr" aria-pressed="true">FR</button>
-      <button class="btn" id="btn-en" aria-pressed="false">EN</button>
+<header class="site-header">
+  <div class="wrap header-row">
+    <a class="brand" href="/">
+      <img src="/assets/logo.svg" alt="AutoChatFlow AI" width="40" height="40">
+      <span>AutoChatFlow AI</span>
+    </a>
+    <nav class="nav">
+      <a href="#services">Services</a>
+      <a href="#how">Méthode</a>
+      <a href="#trust">Confiance</a>
+      <a href="#contact">Contact</a>
+      <a class="lang" href="?lang=fr" aria-label="Français">FR</a>
+      <a class="lang" href="?lang=en" aria-label="English">EN</a>
     </nav>
   </div>
 </header>
 
-<main class="wrap">
-  <!-- FR -->
-  <section id="fr" class="card">
-    <p><strong>Responsable</strong> : autochatflow.dpdns.org. Contact :
-      <a href="mailto:contact@autochatflow.dpdns.org">contact@autochatflow.dpdns.org</a></p>
-
-    <h2>Données traitées</h2>
-    <p>Numéro WhatsApp, métadonnées de messages, contenus nécessaires aux échanges, logs techniques des webhooks (n8n), identifiants techniques (IP, user-agent).</p>
-
-    <h2>Finalités</h2>
-    <p>Support client, notifications transactionnelles (commandes, rendez-vous), communications marketing <em>opt-in</em> uniquement.</p>
-
-    <h2>Bases légales</h2>
-    <p>Exécution du contrat, consentement (opt-in WhatsApp), intérêt légitime (qualité de service et sécurité).</p>
-
-    <h2>Destinataires & sous-traitants</h2>
-    <p>Meta Platforms/WhatsApp, hébergeur, prestataires techniques (dont n8n si Cloud). Accès limité au strict nécessaire.</p>
-
-    <h2>Transferts hors UE</h2>
-    <p>Encadrés par des garanties appropriées (ex. Clauses Contractuelles Types de Meta).</p>
-
-    <h2>Durées de conservation</h2>
-    <p>Logs techniques : 90 jours. Données clients actives : 24 mois après la dernière interaction, puis suppression/anonymisation.</p>
-
-    <h2>Sécurité</h2>
-    <p>Mesures techniques et organisationnelles raisonnables (contrôle d’accès, chiffrement en transit, limitation des logs).</p>
-
-    <h2>Droits RGPD</h2>
-    <p>Accès, rectification, effacement, opposition, limitation, portabilité. Exercez vos droits :
-      <a href="mailto:contact@autochatflow.dpdns.org">contact@autochatflow.dpdns.org</a>. Réclamation : CNIL.</p>
-
-    <p class="muted">Dernière mise à jour : 11/08/2025</p>
+<main>
+  <section class="hero">
+    <div class="wrap grid2">
+      <div>
+        <h1>Automatisez WhatsApp & vos processus avec n8n</h1>
+        <p class="lead">À <strong>Mulhouse</strong>, nous aidons <strong>dirigeants, PME, e-commerçants et freelancers</strong> à gagner du temps, faire des économies et augmenter la productivité.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="https://wa.me/33634992091" target="_blank" rel="noopener">Parler sur WhatsApp</a>
+          <a class="btn ghost" href="mailto:contact@autochatflow.dpdns.org?subject=Audit%20gratuit">Demander un audit gratuit</a>
+        </div>
+        <ul class="badges">
+          <li>SIRET : 88426018300014</li>
+          <li>Basé à Mulhouse (FR)</li>
+          <li>RGPD • HTTPS • Cloudflare</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Ce qu’on automatise</h3>
+        <ul class="check">
+          <li>Messages WhatsApp entrants/sortants (Cloud API)</li>
+          <li>Bots & agents IA connectés à vos outils</li>
+          <li>Workflows n8n (CRM, e-commerce, emails…)</li>
+          <li>Notifications & réponses instantanées</li>
+        </ul>
+        <p class="mini muted">Stack : WhatsApp Cloud API • n8n • Docker • Cloudflare</p>
+      </div>
+    </div>
   </section>
 
-  <!-- EN -->
-  <section id="en" class="card" hidden>
-    <p><strong>Controller</strong>: autochatflow.dpdns.org. Contact:
-      <a href="mailto:contact@autochatflow.dpdns.org">contact@autochatflow.dpdns.org</a></p>
+  <section id="services" class="section">
+    <div class="wrap">
+      <h2>Services</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>WhatsApp Business (Cloud API)</h3>
+          <p>Connexion officielle, webhooks, templates de messages, vérification et bonnes pratiques pour maintenir une haute délivrabilité.</p>
+        </article>
+        <article class="card">
+          <h3>Automatisations n8n</h3>
+          <p>Création de workflows robustes (CRM, Google Sheets, Stripe, e-commerce) avec logs & observabilité.</p>
+        </article>
+        <article class="card">
+          <h3>Agents IA & routing</h3>
+          <p>IA pour pré-qualifier, router et répondre aux demandes répétitives, transfert à l’humain en un clic.</p>
+        </article>
+        <article class="card">
+          <h3>Intégration sur mesure</h3>
+          <p>Docker, reverse proxy, Cloudflare, sécurité et conformité (RGPD, conservation minimale, HTTPS).</p>
+        </article>
+      </div>
+    </div>
+  </section>
 
-    <h2>Data processed</h2>
-    <p>WhatsApp number, messaging metadata, content as needed to provide service, webhook logs (n8n), technical identifiers (IP, user-agent).</p>
+  <section id="how" class="section alt">
+    <div class="wrap grid2">
+      <div>
+        <h2>Notre méthode</h2>
+        <ol class="steps">
+          <li><strong>Audit express</strong> (30 min) : besoins, outils, quick-wins.</li>
+          <li><strong>Prototype</strong> : un flux WhatsApp & un workflow n8n fonctionnels.</li>
+          <li><strong>Déploiement</strong> : sécurité, monitoring, tests bout-à-bout.</li>
+          <li><strong>Optimisation</strong> : KPI, coût, latence, maintenance.</li>
+        </ol>
+      </div>
+      <div class="panel">
+        <h3>Résultats concrets</h3>
+        <ul class="check">
+          <li>Temps de réponse ÷ 5</li>
+          <li>Réduction des tâches manuelles</li>
+          <li>Traçabilité & conformité</li>
+          <li>Satisfaction clients ↑</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <h2>Purposes</h2>
-    <p>Customer support, transactional notifications (orders, appointments), marketing communications with prior opt-in.</p>
+  <section id="trust" class="section">
+    <div class="wrap grid2">
+      <div>
+        <h2>Confiance & conformité</h2>
+        <p>Nous adhérons au principe de minimisation des données, chiffrons en transit (HTTPS) et limitons la conservation des logs techniques. Hébergement et réseau protégés par Cloudflare.</p>
+        <p class="mini muted">Pages légales : <a href="/privacy.html">Confidentialité</a> • <a href="/terms.html">Conditions</a> • <a href="/legal.html">Mentions légales</a></p>
+      </div>
+      <div class="panel">
+        <h3>Besoin d’un pro ?</h3>
+        <p>Un professionnel vous répond et vous guide pour passer en production rapidement et sereinement.</p>
+        <a class="btn primary full" href="https://wa.me/33634992091" target="_blank" rel="noopener">Lancer la discussion WhatsApp</a>
+      </div>
+    </div>
+  </section>
 
-    <h2>Legal bases</h2>
-    <p>Contract performance, consent (WhatsApp opt-in), legitimate interest (service quality & security).</p>
-
-    <h2>Recipients & processors</h2>
-    <p>Meta Platforms/WhatsApp, hosting provider, technical service providers (including n8n if Cloud). Access is strictly limited to what is necessary.</p>
-
-    <h2>International transfers</h2>
-    <p>Protected by appropriate safeguards (e.g., Meta SCCs).</p>
-
-    <h2>Retention</h2>
-    <p>Technical logs: 90 days. Active customer data: 24 months after last interaction, then deletion/anonymization.</p>
-
-    <h2>Security</h2>
-    <p>Reasonable technical and organizational measures (access control, in-transit encryption, limited logging).</p>
-
-    <h2>Data subject rights</h2>
-    <p>Access, rectification, erasure, objection, restriction, portability. Exercise your rights via
-      <a href="mailto:contact@autochatflow.dpdns.org">contact@autochatflow.dpdns.org</a>. You may lodge a complaint with your supervisory authority.</p>
-
-    <p class="muted">Last update: 11/08/2025</p>
+  <section id="contact" class="section alt">
+    <div class="wrap grid2">
+      <div>
+        <h2>Contact</h2>
+        <ul class="list">
+          <li><strong>Email :</strong> <a href="mailto:contact@autochatflow.dpdns.org">contact@autochatflow.dpdns.org</a></li>
+          <li><strong>WhatsApp :</strong> <a href="https://wa.me/33634992091" target="_blank" rel="noopener">+33 6 34 99 20 91</a></li>
+          <li><strong>Localisation :</strong> Mulhouse, France</li>
+          <li><strong>SIRET :</strong> 88426018300014</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>Audit gratuit</h3>
+        <p>Recevez une feuille de route des 3 automatisations les plus rentables pour votre activité.</p>
+        <a class="btn ghost full" href="mailto:contact@autochatflow.dpdns.org?subject=Audit%20gratuit">Demander l’audit par email</a>
+      </div>
+    </div>
   </section>
 </main>
 
-<footer>
-  <!-- Footer FR -->
-  <div id="footer-fr" class="wrap">
-    <div class="footer-grid">
-      <div>
-        <div class="footer-title">autochatflow.dpdns.org</div>
-        <p class="muted">Automatisation WhatsApp + n8n. Support et notifications transactionnelles.</p>
-        <p><a href="mailto:contact@autochatflow.dpdns.org">contact@autochatflow.dpdns.org</a></p>
-      </div>
-      <div>
-        <div class="footer-title">Ressources</div>
-        <ul style="list-style:none; padding:0; margin:0">
-          <li><a href="?lang=fr">Politique de confidentialité</a></li>
-          <li><a href="#" aria-disabled="true" title="Bientôt">Conditions d’utilisation</a></li>
-          <li><a href="#" aria-disabled="true" title="Bientôt">Mentions légales</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="footer-title">Données & droits</div>
-        <ul style="list-style:none; padding:0; margin:0">
-          <li><a href="mailto:contact@autochatflow.dpdns.org?subject=Demande%20d%27acc%C3%A8s">Demander mes données</a></li>
-          <li><a href="mailto:contact@autochatflow.dpdns.org?subject=Suppression%20de%20mes%20donn%C3%A9es">Demander la suppression</a></li>
-          <li><a href="?lang=en">Privacy Policy (EN)</a></li>
-        </ul>
-      </div>
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <div class="brandline"><img src="/assets/logo.svg" alt="" width="28" height="28"><span>AutoChatFlow AI</span></div>
+      <p class="muted">Automatisation WhatsApp + n8n pour dirigeants, PME et e-commerçants.</p>
+      <p class="mini">© <span id="y"></span> AutoChatFlow AI — Tous droits réservés.</p>
     </div>
-    <div class="legal">© 2025 autochatflow.dpdns.org — Tous droits réservés.<br>Hébergé via GitHub Pages. TLS activé.</div>
-  </div>
-
-  <!-- Footer EN -->
-  <div id="footer-en" class="wrap" hidden>
-    <div class="footer-grid">
-      <div>
-        <div class="footer-title">autochatflow.dpdns.org</div>
-        <p class="muted">WhatsApp + n8n automation. Support and transactional notifications.</p>
-        <p><a href="mailto:contact@autochatflow.dpdns.org">contact@autochatflow.dpdns.org</a></p>
-      </div>
-      <div>
-        <div class="footer-title">Resources</div>
-        <ul style="list-style:none; padding:0; margin:0">
-          <li><a href="?lang=en">Privacy Policy</a></li>
-          <li><a href="#" aria-disabled="true" title="Coming soon">Terms of Service</a></li>
-          <li><a href="#" aria-disabled="true" title="Coming soon">Legal notice</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="footer-title">Data & rights</div>
-        <ul style="list-style:none; padding:0; margin:0">
-          <li><a href="mailto:contact@autochatflow.dpdns.org?subject=Data%20access%20request">Request my data</a></li>
-          <li><a href="mailto:contact@autochatflow.dpdns.org?subject=Delete%20my%20data">Request deletion</a></li>
-          <li><a href="?lang=fr">Politique de confidentialité (FR)</a></li>
-        </ul>
-      </div>
+    <div>
+      <h4>Ressources</h4>
+      <ul class="links">
+        <li><a href="/privacy.html">Politique de confidentialité</a></li>
+        <li><a href="/terms.html">Conditions d’utilisation</a></li>
+        <li><a href="/legal.html">Mentions légales</a></li>
+      </ul>
     </div>
-    <div class="legal">© 2025 autochatflow.dpdns.org — All rights reserved.<br>Hosted via GitHub Pages. TLS enabled.</div>
+    <div>
+      <h4>Contact</h4>
+      <ul class="links">
+        <li><a href="mailto:contact@autochatflow.dpdns.org">contact@autochatflow.dpdns.org</a></li>
+        <li><a href="https://wa.me/33634992091" target="_blank" rel="noopener">WhatsApp</a></li>
+      </ul>
+    </div>
   </div>
 </footer>
 
-<button id="backToTop" title="Retour en haut">↑</button>
-
 <script>
-(function(){
-  const btnFr=document.getElementById('btn-fr');
-  const btnEn=document.getElementById('btn-en');
-  const fr=document.getElementById('fr');
-  const en=document.getElementById('en');
-  const footerFr=document.getElementById('footer-fr');
-  const footerEn=document.getElementById('footer-en');
-  const title=document.getElementById('title');
-  const subtitle=document.getElementById('subtitle');
-  const backToTop=document.getElementById('backToTop');
-
-  function setLang(l){
-    const isFR=(l==='fr');
-    fr.hidden=!isFR; en.hidden=isFR;
-    footerFr.hidden=!isFR; footerEn.hidden=isFR;
-    btnFr.setAttribute('aria-pressed',isFR?'true':'false');
-    btnEn.setAttribute('aria-pressed',isFR?'false':'true');
-    document.documentElement.lang=isFR?'fr':'en';
-    title.textContent=isFR?'Politique de confidentialité':'Privacy Policy';
-    subtitle.textContent=isFR
-      ?'Cette page décrit comment autochatflow.dpdns.org traite vos données.'
-      :'This page explains how autochatflow.dpdns.org processes your data.';
-    const url=new URL(location.href); url.searchParams.set('lang', l); history.replaceState({},'',url);
-  }
-
-  btnFr.addEventListener('click',()=>setLang('fr'));
-  btnEn.addEventListener('click',()=>setLang('en'));
-
-  const qs=new URLSearchParams(location.search);
-  const initLang=qs.get('lang') || (navigator.language||'fr').slice(0,2);
-  setLang(initLang==='en'?'en':'fr');
-
-  // Back to top
-  window.addEventListener('scroll',()=>{
-    backToTop.style.display=(window.scrollY>200)?'flex':'none';
-  });
-  backToTop.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
-})();
+  document.getElementById('y').textContent=new Date().getFullYear();
 </script>
-
 </body>
 </html>
