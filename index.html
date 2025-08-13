@@ -2,183 +2,355 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>AutoChatFlow AI – Automatisation WhatsApp & n8n à Mulhouse</title>
+  <title>AutoChatFlow AI – Politique de confidentialité</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="AutoChatFlow AI conçoit des automatisations WhatsApp Business et n8n pour dirigeants, PME et e-commerçants. Basé à Mulhouse. SIRET 88426018300014.">
+  <meta name="description" content="Politique de confidentialité (FR/EN). Données minimisées, sécurité, droits RGPD, contact et pratiques d’AutoChatFlow AI.">
   <meta name="robots" content="index,follow">
-  <!-- Open Graph -->
-  <meta property="og:title" content="AutoChatFlow AI – Automatisation WhatsApp & n8n">
-  <meta property="og:description" content="Gagnez du temps et de l’argent grâce à l’automatisation WhatsApp + n8n. Audit gratuit.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://autochatflow.dpdns.org/">
+  <link rel="canonical" href="https://autochatflow.dpdns.org/privacy.html">
+  <meta property="og:title" content="AutoChatFlow AI – Politique de confidentialité">
+  <meta property="og:description" content="Données minimisées, sécurité, droits RGPD, contact.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://autochatflow.dpdns.org/privacy.html">
   <meta property="og:image" content="https://autochatflow.dpdns.org/assets/og.png">
   <meta property="og:locale" content="fr_FR">
-  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-
   <link rel="icon" href="/assets/favicon.ico">
   <link rel="apple-touch-icon" href="/assets/favicon.png">
-  <link rel="stylesheet" href="/assets/style.css">
-  <script>
-    // simple FR/EN toggle using query param ?lang=en
-    (function(){
-      const l=(new URLSearchParams(location.search).get('lang')||navigator.language||'fr').slice(0,2);
-      document.documentElement.lang=(l==='en')?'en':'fr';
-    })();
-  </script>
+  <style>
+    :root{
+      --bg:#0b0d12; --card:#11141a; --muted:#9aa3b2; --text:#e8edf5;
+      --accent:#6ea8fe; --accent-strong:#4e86e6; --shadow:0 8px 32px rgba(0,0,0,.35);
+      --radius:14px; --radius-sm:10px; --wrap:900px;
+      --ok:#22c55e; --danger:#ef4444;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif}
+    a{color:var(--accent);text-decoration:none}
+    a:hover,a:focus{color:var(--accent-strong);text-decoration:underline}
+    .wrap{max-width:var(--wrap);margin:auto;padding:0 20px}
+    header{position:sticky;top:0;backdrop-filter:saturate(180%) blur(12px);background:rgba(11,13,18,.7);border-bottom:1px solid rgba(255,255,255,.06);z-index:20}
+    .row{display:flex;align-items:center;justify-content:space-between;height:64px}
+    .brand{display:flex;gap:10px;align-items:center;color:var(--text);text-decoration:none;font-weight:700}
+    .nav{display:flex;gap:16px;align-items:center}
+    .lang-btn{border:1px solid rgba(255,255,255,.12);padding:6px 10px;border-radius:999px;background:transparent;color:var(--text);cursor:pointer}
+    .lang-btn[aria-current="true"]{background:var(--accent);border-color:transparent;color:#051226}
+    main{padding:40px 0}
+    h1{font-size:2rem;margin:.2em 0 .4em}
+    .muted{color:var(--muted)}
+    .section{margin:28px 0}
+    .panel{background:var(--card);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+    .btn{display:inline-block;padding:12px 16px;border-radius:10px;font-weight:600;border:1px solid transparent;background:var(--accent);color:#061427;cursor:pointer}
+    .btn:hover{background:var(--accent-strong)}
+    form{margin-top:16px}
+    .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    @media(max-width:720px){.grid{grid-template-columns:1fr}}
+    label{display:block;font-weight:600;margin:8px 0 6px}
+    input,select,textarea{width:100%;padding:10px;border-radius:10px;border:1px solid rgba(255,255,255,.18);background:#0e1117;color:var(--text)}
+    textarea{min-height:120px;resize:vertical}
+    .help{font-size:.9rem;color:var(--muted)}
+    .error{color:var(--danger);font-size:.9rem}
+    footer{padding:28px 0;border-top:1px solid rgba(255,255,255,.08);margin-top:36px}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:16px}
+    @media(max-width:800px){.footer-grid{grid-template-columns:1fr}}
+    .mini{font-size:.9rem}
+    :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+  </style>
 </head>
 <body>
-<header class="site-header">
-  <div class="wrap header-row">
-    <a class="brand" href="/">
-      <img src="/assets/logo.svg" alt="AutoChatFlow AI" width="40" height="40">
-      <span>AutoChatFlow AI</span>
-    </a>
-    <nav class="nav">
-      <a href="#services">Services</a>
-      <a href="#how">Méthode</a>
-      <a href="#trust">Confiance</a>
-      <a href="#contact">Contact</a>
-      <a class="lang" href="?lang=fr" aria-label="Français">FR</a>
-      <a class="lang" href="?lang=en" aria-label="English">EN</a>
+<header>
+  <div class="wrap row">
+    <a class="brand" href="/" aria-label="AutoChatFlow AI – Home"><img src="/assets/logo.svg" alt="" width="28" height="28"> <span>AutoChatFlow AI</span></a>
+    <nav class="nav" aria-label="Main">
+      <a href="/#services" data-i18n="nav.services">Services</a>
+      <a href="/#how" data-i18n="nav.method">Méthode</a>
+      <a href="/#trust" data-i18n="nav.trust">Confiance</a>
+      <a href="/#contact" data-i18n="nav.contact">Contact</a>
+      <button class="lang-btn" data-lang="fr" aria-current="true">FR</button>
+      <button class="lang-btn" data-lang="en">EN</button>
     </nav>
   </div>
 </header>
 
-<main>
-  <section class="hero">
-    <div class="wrap grid2">
-      <div>
-        <h1>Automatisez WhatsApp & vos processus avec n8n</h1>
-        <p class="lead">À <strong>Mulhouse</strong>, nous aidons <strong>dirigeants, PME, e-commerçants et freelancers</strong> à gagner du temps, faire des économies et augmenter la productivité.</p>
-        <div class="cta-row">
-          <a class="btn ghost" href="mailto:contact@autochatflow.dpdns.org?subject=Audit%20gratuit">Demander un audit gratuit</a>
+<main class="wrap" aria-live="polite">
+  <p class="muted mini" data-i18n="top.breadcrumb">Accueil › Politique de confidentialité</p>
+  <h1 data-i18n="title">Politique de confidentialité</h1>
+  <p class="muted" data-i18n="intro">Nous respectons votre vie privée: minimisation des données, chiffrement en transit (HTTPS) et conservation limitée des logs techniques.</p>
+
+  <section class="section">
+    <h2 data-i18n="c1.title">1. Responsable de traitement</h2>
+    <div class="panel">
+      <p><strong>AutoChatFlow AI</strong> — SIRET 88426018300014 — Mulhouse, France — <a href="mailto:contact@autochatflow.dpdns.org">contact@autochatflow.dpdns.org</a></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 data-i18n="c2.title">2. Données collectées</h2>
+    <div class="panel">
+      <ul>
+        <li data-i18n="c2.li1">Coordonnées (email, nom), contenu du message.</li>
+        <li data-i18n="c2.li2">Données techniques minimales (logs d’erreur, métadonnées d’envoi).</li>
+        <li data-i18n="c2.li3">Aucune donnée sensible n’est demandée.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 data-i18n="c3.title">3. Finalités</h2>
+    <div class="panel">
+      <ul>
+        <li data-i18n="c3.li1">Répondre à vos demandes et réaliser l’audit.</li>
+        <li data-i18n="c3.li2">Améliorer nos services (qualité, sécurité, diagnostic).</li>
+        <li data-i18n="c3.li3">Respect des obligations légales.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 data-i18n="c4.title">4. Durées de conservation</h2>
+    <div class="panel">
+      <p data-i18n="c4.p1">Nous conservons les données de contact pendant 24 mois maximum, et les logs techniques le temps strictement nécessaire au diagnostic.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 data-i18n="c5.title">5. Vos droits</h2>
+    <div class="panel">
+      <p data-i18n="c5.p1">Accès, rectification, opposition, effacement et portabilité. Exercez vos droits par email: <a href="mailto:contact@autochatflow.dpdns.org">contact@autochatflow.dpdns.org</a>.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 data-i18n="cta.title">Demandez votre audit personnalisé</h2>
+    <div class="panel">
+      <p class="muted" data-i18n="cta.subtitle">Expliquez votre besoin en 30 secondes. Réponse sous 24h.</p>
+      <form id="leadForm" novalidate>
+        <div class="grid">
+          <div>
+            <label for="email" data-i18n="form.email.label">Email</label>
+            <input type="email" id="email" name="email" placeholder="votre@email.fr" required>
+            <div class="help" data-i18n="form.email.help">Nous n’utilisons votre email que pour vous répondre.</div>
+            <div class="error" id="emailErr"></div>
+          </div>
+          <div>
+            <label for="company" data-i18n="form.company.label">Entreprise (optionnel)</label>
+            <input type="text" id="company" name="company" placeholder="Société / Marque">
+          </div>
+          <div>
+            <label for="industry" data-i18n="form.industry.label">Secteur</label>
+            <select id="industry" name="industry" required>
+              <option value="" data-i18n="form.select.placeholder">Sélectionnez…</option>
+              <option>E-commerce</option>
+              <option>Services</option>
+              <option>Industrie</option>
+              <option>Education</option>
+              <option>Autre</option>
+            </select>
+            <div class="error" id="industryErr"></div>
+          </div>
+          <div>
+            <label for="goal" data-i18n="form.goal.label">Objectif principal</label>
+            <select id="goal" name="goal" required>
+              <option value="" data-i18n="form.select.placeholder">Sélectionnez…</option>
+              <option data-i18n="form.goal.o1">Gagner du temps</option>
+              <option data-i18n="form.goal.o2">Réduire les coûts</option>
+              <option data-i18n="form.goal.o3">Améliorer la satisfaction client</option>
+              <option data-i18n="form.goal.o4">Augmenter le CA</option>
+            </select>
+            <div class="error" id="goalErr"></div>
+          </div>
         </div>
-        <ul class="badges">
-          <li>SIRET : 88426018300014</li>
-          <li>Basé à Mulhouse (FR)</li>
-          <li>RGPD • HTTPS • Cloudflare</li>
-        </ul>
-      </div>
-      <div class="panel">
-        <h3>Ce qu’on automatise</h3>
-        <ul class="check">
-          <li>Messages WhatsApp entrants/sortants (Cloud API)</li>
-          <li>Bots & agents IA connectés à vos outils</li>
-          <li>Workflows n8n (CRM, e-commerce, emails…)</li>
-          <li>Notifications & réponses instantanées</li>
-        </ul>
-        <p class="mini muted">Stack : WhatsApp Cloud API • n8n • Docker • Cloudflare</p>
-      </div>
-    </div>
-  </section>
+        <label for="message" data-i18n="form.message.label">Décrivez votre besoin</label>
+        <textarea id="message" name="message" placeholder="Ex: WhatsApp pour qualifier les leads, relances automatiques, intégration CRM…" required></textarea>
+        <div class="error" id="messageErr"></div>
 
-  <section id="services" class="section">
-    <div class="wrap">
-      <h2>Services</h2>
-      <div class="cards">
-        <article class="card">
-          <h3>WhatsApp Business (Cloud API)</h3>
-          <p>Connexion officielle, webhooks, templates de messages, vérification et bonnes pratiques pour maintenir une haute délivrabilité.</p>
-        </article>
-        <article class="card">
-          <h3>Automatisations n8n</h3>
-          <p>Création de workflows robustes (CRM, Google Sheets, Stripe, e-commerce) avec logs & observabilité.</p>
-        </article>
-        <article class="card">
-          <h3>Agents IA & routing</h3>
-          <p>IA pour pré-qualifier, router et répondre aux demandes répétitives, transfert à l’humain en un clic.</p>
-        </article>
-        <article class="card">
-          <h3>Intégration sur mesure</h3>
-          <p>Docker, reverse proxy, Cloudflare, sécurité et conformité (RGPD, conservation minimale, HTTPS).</p>
-        </article>
-      </div>
-    </div>
-  </section>
+        <button class="btn" type="submit" data-i18n="form.submit">Demander l’audit</button>
 
-  <section id="how" class="section alt">
-    <div class="wrap grid2">
-      <div>
-        <h2>Notre méthode</h2>
-        <ol class="steps">
-          <li><strong>Audit express</strong> (30 min) : besoins, outils, quick-wins.</li>
-          <li><strong>Prototype</strong> : un flux WhatsApp & un workflow n8n fonctionnels.</li>
-          <li><strong>Déploiement</strong> : sécurité, monitoring, tests bout-à-bout.</li>
-          <li><strong>Optimisation</strong> : KPI, coût, latence, maintenance.</li>
-        </ol>
-      </div>
-      <div class="panel">
-        <h3>Résultats concrets</h3>
-        <ul class="check">
-          <li>Temps de réponse ÷ 5</li>
-          <li>Réduction des tâches manuelles</li>
-          <li>Traçabilité & conformité</li>
-          <li>Satisfaction clients ↑</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+        <div class="help" style="margin-top:8px">
+          <span data-i18n="form.notice.prefix">En soumettant, vous acceptez notre</span>
+          <a href="/privacy.html" data-i18n="form.notice.link">politique de confidentialité</a>.
+        </div>
 
-  <section id="trust" class="section">
-    <div class="wrap grid2">
-      <div>
-        <h2>Confiance & conformité</h2>
-        <p>Nous adhérons au principe de minimisation des données, chiffrons en transit (HTTPS) et limitons la conservation des logs techniques. Hébergement et réseau protégés par Cloudflare.</p>
-        <p class="mini muted">Pages légales : <a href="/privacy.html">Confidentialité</a> • <a href="/terms.html">Conditions</a> • <a href="/legal.html">Mentions légales</a></p>
-      </div>
-      <div class="panel">
-        <h3>Besoin d’un pro ?</h3>
-        <p>Un professionnel vous répond et vous guide pour passer en production rapidement et sereinement.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section alt">
-    <div class="wrap grid2">
-      <div>
-        <h2>Contact</h2>
-        <ul class="list">
-          <li><strong>Email :</strong> <a href="mailto:contact@autochatflow.dpdns.org">contact@autochatflow.dpdns.org</a></li>
-          <li><strong>Localisation :</strong> Mulhouse, France</li>
-          <li><strong>SIRET :</strong> 88426018300014</li>
-        </ul>
-      </div>
-      <div class="panel">
-        <h3>Audit gratuit</h3>
-        <p>Recevez une feuille de route des 3 automatisations les plus rentables pour votre activité.</p>
-        <a class="btn ghost full" href="mailto:contact@autochatflow.dpdns.org?subject=Audit%20gratuit">Demander l’audit par email</a>
-      </div>
+        <div id="formStatus" class="mini" aria-live="polite" style="margin-top:8px"></div>
+      </form>
     </div>
   </section>
 </main>
 
-<footer class="site-footer">
+<footer>
   <div class="wrap footer-grid">
     <div>
-      <div class="brandline"><img src="/assets/logo.svg" alt="" width="28" height="28"><span>AutoChatFlow AI</span></div>
-      <p class="muted">Automatisation WhatsApp + n8n pour dirigeants, PME et e-commerçants.</p>
-      <p class="mini">© <span id="y"></span> AutoChatFlow AI — Tous droits réservés.</p>
+      <p class="mini">© <span id="year"></span> AutoChatFlow AI — <span data-i18n="footer.rights">Tous droits réservés.</span></p>
     </div>
     <div>
-      <h4>Ressources</h4>
-      <ul class="links">
-        <li><a href="/privacy.html">Politique de confidentialité</a></li>
-        <li><a href="/terms.html">Conditions d’utilisation</a></li>
-        <li><a href="/legal.html">Mentions légales</a></li>
+      <ul class="mini">
+        <li><a href="/privacy.html" data-i18n="footer.privacy">Confidentialité</a></li>
+        <li><a href="/terms.html" data-i18n="footer.terms">Conditions</a></li>
+        <li><a href="/legal.html" data-i18n="footer.legal">Mentions légales</a></li>
       </ul>
     </div>
-    <div>
-      <h4>Contact</h4>
-      <ul class="links">
-        <li><a href="mailto:contact@autochatflow.dpdns.org">contact@autochatflow.dpdns.org</a></li>
-      </ul>
+    <div class="mini">
+      <a href="mailto:contact@autochatflow.dpdns.org">contact@autochatflow.dpdns.org</a>
     </div>
   </div>
 </footer>
 
 <script>
-  document.getElementById('y').textContent=new Date().getFullYear();
+  const I18N = {
+    fr:{
+      seo:{title:"AutoChatFlow AI – Politique de confidentialité",desc:"Politique de confidentialité (FR/EN). Données minimisées, sécurité, droits RGPD, contact."},
+      top:{breadcrumb:"Accueil › Politique de confidentialité"},
+      title:"Politique de confidentialité",
+      intro:"Nous respectons votre vie privée: minimisation des données, chiffrement en transit (HTTPS) et conservation limitée des logs techniques.",
+      nav:{services:"Services",method:"Méthode",trust:"Confiance",contact:"Contact"},
+      c1:{title:"1. Responsable de traitement"},
+      c2:{title:"2. Données collectées",li1:"Coordonnées (email, nom), contenu du message.",li2:"Données techniques minimales (logs d’erreur, métadonnées d’envoi).",li3:"Aucune donnée sensible n’est demandée."},
+      c3:{title:"3. Finalités",li1:"Répondre à vos demandes et réaliser l’audit.",li2:"Améliorer nos services (qualité, sécurité, diagnostic).",li3:"Respect des obligations légales."},
+      c4:{title:"4. Durées de conservation",p1:"Nous conservons les données de contact pendant 24 mois maximum, et les logs techniques le temps strictement nécessaire au diagnostic."},
+      c5:{title:"5. Vos droits",p1:"Accès, rectification, opposition, effacement et portabilité. Exercez vos droits par email: "},
+      cta:{title:"Demandez votre audit personnalisé",subtitle:"Expliquez votre besoin en 30 secondes. Réponse sous 24h."},
+      form:{
+        email:{label:"Email",help:"Nous n’utilisons votre email que pour vous répondre."},
+        company:{label:"Entreprise (optionnel)"},
+        industry:{label:"Secteur"},
+        goal:{label:"Objectif principal",o1:"Gagner du temps",o2:"Réduire les coûts",o3:"Améliorer la satisfaction client",o4:"Augmenter le CA"},
+        message:{label:"Décrivez votre besoin"},
+        submit:"Demander l’audit",
+        notice:{prefix:"En soumettant, vous acceptez notre",link:"politique de confidentialité"}
+      },
+      footer:{rights:"Tous droits réservés.",privacy:"Confidentialité",terms:"Conditions",legal:"Mentions légales"},
+      formMsgs:{
+        ok:"Merci ! Votre demande a été envoyée. Nous revenons vers vous sous 24h.",
+        fail:"Désolé, une erreur est survenue. Réessayez ou contactez-nous par email.",
+        invalid:"Veuillez corriger les champs en rouge."
+      },
+      select:{placeholder:"Sélectionnez…"}
+    },
+    en:{
+      seo:{title:"AutoChatFlow AI – Privacy Policy",desc:"Privacy Policy (FR/EN). Data minimization, security, GDPR rights, and contact."},
+      top:{breadcrumb:"Home › Privacy Policy"},
+      title:"Privacy Policy",
+      intro:"We respect your privacy: data minimization, encryption in transit (HTTPS), and limited retention of technical logs.",
+      nav:{services:"Services",method:"Method",trust:"Trust",contact:"Contact"},
+      c1:{title:"1. Controller"},
+      c2:{title:"2. Data collected",li1:"Contact details (email, name), message content.",li2:"Minimal technical data (error logs, sending metadata).",li3:"No sensitive data requested."},
+      c3:{title:"3. Purposes",li1:"Answer your requests and deliver the audit.",li2:"Improve our services (quality, security, diagnostics).",li3:"Legal compliance."},
+      c4:{title:"4. Retention",p1:"We retain contact data for up to 24 months and technical logs for the strictly necessary time for diagnostics."},
+      c5:{title:"5. Your rights",p1:"Access, rectification, objection, erasure and portability. Exercise your rights via email: "},
+      cta:{title:"Request your tailored audit",subtitle:"Share your need in 30 seconds. Reply in 24h."},
+      form:{
+        email:{label:"Email",help:"We only use your email to reply."},
+        company:{label:"Company (optional)"},
+        industry:{label:"Industry"},
+        goal:{label:"Primary objective",o1:"Save time",o2:"Reduce costs",o3:"Improve customer satisfaction",o4:"Increase revenue"},
+        message:{label:"Describe your need"},
+        submit:"Request the audit",
+        notice:{prefix:"By submitting, you agree to our",link:"privacy policy"}
+      },
+      footer:{rights:"All rights reserved.",privacy:"Privacy",terms:"Terms",legal:"Imprint"},
+      formMsgs:{
+        ok:"Thanks! Your request has been sent. We’ll get back within 24h.",
+        fail:"Sorry, something went wrong. Please try again or email us.",
+        invalid:"Please fix the highlighted fields."
+      },
+      select:{placeholder:"Select…"}
+    }
+  };
+
+  const $ = (s, r=document)=>r.querySelector(s);
+  const $$ = (s, r=document)=>Array.from(r.querySelectorAll(s));
+
+  function getLang(){
+    const p = new URLSearchParams(location.search).get('lang');
+    const s = localStorage.getItem('lang');
+    if(p) return p.startsWith('en')?'en':'fr';
+    if(s) return s;
+    const n = (navigator.language||'fr').slice(0,2);
+    return n==='en'?'en':'fr';
+  }
+
+  function applyLang(lang){
+    const d = I18N[lang];
+    document.documentElement.lang = lang;
+    document.title = d.seo.title;
+    const meta = document.querySelector('meta[name="description"]');
+    if(meta) meta.setAttribute('content', d.seo.desc);
+
+    // Map all data-i18n nodes
+    $$('[data-i18n]').forEach(el=>{
+      const key = el.getAttribute('data-i18n');
+      const val = key.split('.').reduce((o,k)=>o&&o[k], d);
+      if(typeof val === 'string') el.innerHTML = val;
+    });
+
+    // Placeholder for select options with a single placeholder option
+    $$('option[data-i18n="form.select.placeholder"]').forEach(o=>{
+      o.textContent = d.select.placeholder;
+    });
+
+    // Lang switch visual state
+    $$('.lang-btn').forEach(b=>b.setAttribute('aria-current', b.dataset.lang===lang ? 'true':'false'));
+  }
+
+  function validate(){
+    let ok = true;
+    const L = I18N[getLang()];
+    const email = $('#email');
+    const industry = $('#industry');
+    const goal = $('#goal');
+    const message = $('#message');
+
+    $('#emailErr').textContent = '';
+    $('#industryErr').textContent = '';
+    $('#goalErr').textContent = '';
+    $('#messageErr').textContent = '';
+
+    if(!email.value || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value)){
+      $('#emailErr').textContent = L.formMsgs.invalid; ok=false;
+    }
+    if(!industry.value){ $('#industryErr').textContent = L.formMsgs.invalid; ok=false; }
+    if(!goal.value){ $('#goalErr').textContent = L.formMsgs.invalid; ok=false; }
+    if(!message.value || message.value.length<10){ $('#messageErr').textContent = L.formMsgs.invalid; ok=false; }
+
+    return ok;
+  }
+
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  const initLang = getLang();
+  applyLang(initLang);
+  localStorage.setItem('lang', initLang);
+
+  $$('.lang-btn').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const l = btn.dataset.lang;
+      localStorage.setItem('lang', l);
+      const url = new URL(location.href);
+      url.searchParams.set('lang', l);
+      history.replaceState({}, '', url);
+      applyLang(l);
+    });
+  });
+
+  const form = document.getElementById('leadForm');
+  form.addEventListener('submit', async (e)=>{
+    e.preventDefault();
+    const L = I18N[getLang()];
+    const status = document.getElementById('formStatus');
+    status.textContent = '';
+    if(!validate()){
+      status.textContent = L.formMsgs.invalid;
+      return;
+    }
+    // Intégrez votre endpoint ici (Formspree, n8n webhook, etc.)
+    // const endpoint = 'https://YOUR_ENDPOINT_HERE';
+    // const res = await fetch(endpoint, {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(Object.fromEntries(new FormData(form)))});
+    // if(res.ok){ status.textContent=L.formMsgs.ok; form.reset(); } else { status.textContent=L.formMsgs.fail; }
+
+    // Placeholder de succès offline
+    await new Promise(r=>setTimeout(r,600));
+    status.textContent = L.formMsgs.ok;
+    form.reset();
+  });
 </script>
 </body>
 </html>
