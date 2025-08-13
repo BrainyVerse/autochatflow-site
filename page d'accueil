@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AutoChatFlow AI – Automatisation WhatsApp & n8n</title>
+  <style>
+    *,*::before,*::after{box-sizing:border-box}
+    :root{
+      --bg:#f7f9fc;--paper:#fff;--text:#1c1e21;--brand:#0052cc;--brand-2:#00409c;
+      --muted:#5f6b7a;--shadow:0 6px 16px rgba(0,0,0,.08);--radius:14px;
+      --accent:#25d366;--accent-2:#128c7e
+    }
+    body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial}
+    header{position:sticky;top:0;z-index:20;background:linear-gradient(0deg,rgba(0,0,0,.0),rgba(0,0,0,.0)) var(--brand);color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.05)}
+    .bar{max-width:1100px;margin:0 auto;padding:14px 16px;display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center}
+    .brand{font-weight:800;letter-spacing:.3px}
+    nav a{color:#e8f0ff;text-decoration:none;margin:0 10px;font-weight:600}
+    nav a:hover{text-decoration:underline}
+    /* Language switch top-right */
+    .lang{justify-self:end;display:flex;gap:8px;position:relative}
+    .lang button{border:1px solid rgba(255,255,255,.35);background:transparent;color:#fff;padding:6px 10px;border-radius:999px;cursor:pointer;font-weight:700}
+    .lang button[aria-current="true"]{background:#fff;color:var(--brand);border-color:#fff}
+    main{max-width:1100px;margin:28px auto;padding:0 16px}
+    .card{background:var(--paper);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px}
+    .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:18px}
+    @media (max-width:860px){.grid{grid-template-columns:1fr}}
+    h1{margin:0 0 8px;font-size:clamp(1.7rem,3.6vw,2.2rem);line-height:1.2;color:var(--brand)}
+    h2{margin:18px 0 10px;color:var(--brand-2)}
+    .muted{color:var(--muted)}
+    .btn{display:inline-block;margin-top:10px;background:var(--accent);color:#fff;padding:10px 18px;border-radius:999px;text-decoration:none;font-weight:700}
+    .btn:hover{background:var(--accent-2)}
+    .section{margin-top:24px}
+    footer{max-width:1100px;margin:28px auto 40px;padding:0 16px;color:var(--muted);text-align:center}
+    ul,ol{margin:0 0 0 18px}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <div class="brand" id="brand">AutoChatFlow AI</div>
+      <nav>
+        <a href="#services" id="nav-services">Services</a>
+        <a href="#method" id="nav-method">Méthode</a>
+        <a href="#contact" id="nav-contact">Contact</a>
+      </nav>
+      <div class="lang" aria-label="Sélecteur de langue / Language switcher">
+        <button class="lang-btn" data-lang="fr" aria-current="true">FR</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="card grid">
+      <div>
+        <h1 id="hero-title">Automatisez WhatsApp & vos processus avec n8n</h1>
+        <p class="muted" id="hero-lead">À Mulhouse, nous aidons dirigeants, PME et e‑commerçants à gagner du temps, réduire les coûts et booster la productivité grâce à des automatisations sur mesure.</p>
+        <a class="btn" id="hero-cta" href="mailto:contact@autochatflow.ai">Demander un audit gratuit</a>
+      </div>
+      <div>
+        <h2 id="highlights-title">Ce que vous obtenez</h2>
+        <ul>
+          <li id="hi-1">Réponses plus rapides et messages cohérents</li>
+          <li id="hi-2">Workflows traçables et conformes RGPD</li>
+          <li id="hi-3">Intégration à vos outils (CRM, e‑commerce, email)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="services" class="section card">
+      <h2 id="services-title">Services</h2>
+      <ul>
+        <li id="s-1">Connexion officielle WhatsApp Business API (Cloud API)</li>
+        <li id="s-2">Création de workflows n8n robustes (CRM, e‑commerce, facturation)</li>
+        <li id="s-3">Agents IA pour pré‑qualification et routage</li>
+        <li id="s-4">Déploiement sécurisé, monitoring et support</li>
+      </ul>
+    </div>
+
+    <div id="method" class="section card">
+      <h2 id="method-title">Notre méthode</h2>
+      <ol>
+        <li id="m-1">Audit express (30 min) pour identifier les quick wins</li>
+        <li id="m-2">Prototype fonctionnel en conditions réelles</li>
+        <li id="m-3">Déploiement sécurisé, tests de bout en bout</li>
+        <li id="m-4">Optimisation continue (KPI, coûts, SLA)</li>
+      </ol>
+    </div>
+
+    <div id="contact" class="section card">
+      <h2 id="contact-title">Contact</h2>
+      <p id="contact-text">Email : <a href="mailto:contact@autochatflow.ai">contact@autochatflow.ai</a> — Mulhouse, France</p>
+    </div>
+  </main>
+
+  <footer>
+    <div id="footer-text">© 2025 AutoChatFlow AI — Tous droits réservés.</div>
+  </footer>
+
+  <script>
+    // Dictionnaire FR/EN
+    const I18N = {
+      fr: {
+        brand: "AutoChatFlow AI",
+        "nav-services": "Services",
+        "nav-method": "Méthode",
+        "nav-contact": "Contact",
+        "hero-title": "Automatisez WhatsApp & vos processus avec n8n",
+        "hero-lead": "À Mulhouse, nous aidons dirigeants, PME et e‑commerçants à gagner du temps, réduire les coûts et booster la productivité grâce à des automatisations sur mesure.",
+        "hero-cta": "Demander un audit gratuit",
+        "highlights-title": "Ce que vous obtenez",
+        "hi-1": "Réponses plus rapides et messages cohérents",
+        "hi-2": "Workflows traçables et conformes RGPD",
+        "hi-3": "Intégration à vos outils (CRM, e‑commerce, email)",
+        "services-title": "Services",
+        "s-1": "Connexion officielle WhatsApp Business API (Cloud API)",
+        "s-2": "Création de workflows n8n robustes (CRM, e‑commerce, facturation)",
+        "s-3": "Agents IA pour pré‑qualification et routage",
+        "s-4": "Déploiement sécurisé, monitoring et support",
+        "method-title": "Notre méthode",
+        "m-1": "Audit express (30 min) pour identifier les quick wins",
+        "m-2": "Prototype fonctionnel en conditions réelles",
+        "m-3": "Déploiement sécurisé, tests de bout en bout",
+        "m-4": "Optimisation continue (KPI, coûts, SLA)",
+        "contact-title": "Contact",
+        "contact-text": "Email : contact@autochatflow.dpdns.org — Mulhouse, France",
+        "footer-text": "© 2025 AutoChatFlow AI — Tous droits réservés."
+      },
+      en: {
+        brand: "AutoChatFlow AI",
+        "nav-services": "Services",
+        "nav-method": "Method",
+        "nav-contact": "Contact",
+        "hero-title": "Automate WhatsApp and your processes with n8n",
+        "hero-lead": "In Mulhouse, we help business owners, SMBs, and e‑commerce save time, cut costs, and boost productivity with tailored automations.",
+        "hero-cta": "Request a free audit",
+        "highlights-title": "What you get",
+        "hi-1": "Faster replies and consistent messaging",
+        "hi-2": "Traceable workflows, GDPR‑compliant",
+        "hi-3": "Integrations with your tools (CRM, e‑commerce, email)",
+        "services-title": "Services",
+        "s-1": "Official WhatsApp Business API connection (Cloud API)",
+        "s-2": "Robust n8n workflows (CRM, e‑commerce, invoicing)",
+        "s-3": "AI agents for pre‑qualification and routing",
+        "s-4": "Secure deployment, monitoring, and support",
+        "method-title": "Our method",
+        "m-1": "Express audit (30 min) to identify quick wins",
+        "m-2": "Working prototype in real conditions",
+        "m-3": "Secure deployment with end‑to‑end tests",
+        "m-4": "Continuous optimization (KPIs, costs, SLAs)",
+        "contact-title": "Contact",
+        "contact-text": "Email: contact@autochatflow.dpdns.org — Mulhouse, France",
+        "footer-text": "© 2025 AutoChatFlow AI — All rights reserved."
+      }
+    };
+
+    const $ = (id) => document.getElementById(id);
+    const mapIds = [
+      "brand","nav-services","nav-method","nav-contact",
+      "hero-title","hero-lead","hero-cta",
+      "highlights-title","hi-1","hi-2","hi-3",
+      "services-title","s-1","s-2","s-3","s-4",
+      "method-title","m-1","m-2","m-3","m-4",
+      "contact-title","contact-text","footer-text"
+    ];
+
+    function applyLang(lang){
+      const dict = I18N[lang] || I18N.fr;
+      mapIds.forEach(id => { if($(id)) $(id).textContent = dict[id]; });
+      // CTA is a button-like link; restore href after text update
+      const cta = $("hero-cta");
+      if(cta) cta.setAttribute("href","mailto:contact@autochatflow.dpdns.org");
+      document.documentElement.lang = lang;
+
+      // UI state for buttons
+      document.querySelectorAll(".lang-btn").forEach(b=>{
+        b.setAttribute("aria-current", b.dataset.lang===lang ? "true" : "false");
+      });
+
+      // Update URL param without reload
+      const u = new URL(location.href);
+      u.searchParams.set("lang", lang);
+      history.replaceState({}, "", u);
+    }
+
+    // Init: take ?lang=en|fr or browser
+    (function init(){
+      const q = new URLSearchParams(location.search).get("lang");
+      const guess = q ? q : ((navigator.language||"fr").slice(0,2)==="en" ? "en" : "fr");
+      applyLang(guess);
+    })();
+
+    // Events
+    document.querySelectorAll(".lang-btn").forEach(btn=>{
+      btn.addEventListener("click", ()=> applyLang(btn.dataset.lang));
+    });
+  </script>
+</body>
+</html>
