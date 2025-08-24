@@ -11,11 +11,11 @@
 </p>
 
 <p align="center">
-  <a href="https://your-github-username.github.io/your-repo-name/en/privacy.html">🌐 View Live Site</a> • 
-  <a href="#-features">Features</a> • 
-  <a href="#-tech-stack">Tech Stack</a> • 
-  <a href="#️-project-structure">Structure</a> • 
-  <a href="#-license">License</a>
+  <a href="https://autochatflow.dpdns.org/en/privacy.html">🌐 View Live Site</a> • 
+  <a href="#features">Features</a> • 
+  <a href="#tech-stack">Tech Stack</a> • 
+  <a href="#project-structure">Structure</a> • 
+  <a href="#license">License</a>
 </p>
 
 ---
@@ -30,10 +30,10 @@
 
 ## 🚀 Live Preview
 
-- [English Privacy Policy](https://your-github-username.github.io/your-repo-name/en/privacy.html)
-- [Politique de Confidentialité (FR)](https://your-github-username.github.io/your-repo-name/fr/politique.html)
+- [English Privacy Policy](https://autochatflow.dpdns.org/en/privacy.html)
+- [Politique de Confidentialité (FR)](https://autochatflow.dpdns.org/fr/politique.html)
 
-> ✏️ *Replace the URLs above with your actual GitHub Pages links.*
+> Si vous forkiez le projet, remplacez simplement `autochatflow.dpdns.org` par votre domaine ou l’URL GitHub Pages.
 
 ---
 
@@ -61,4 +61,3 @@
 ---
 
 ## 🗂️ Project Structure
-
