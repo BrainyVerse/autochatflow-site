@@ -30,8 +30,8 @@
 
 ## 🚀 Live Preview
 
-- [English Privacy Policy](http://autochatflow.dpdns.org/en/privacy.html)
-- [Politique de Confidentialité (FR)](http://autochatflow.dpdns.org/fr/politique.html)
+- [English Privacy Policy](https://autochatflow.dpdns.org/en/privacy.html)
+- [Politique de Confidentialité (FR)](https://autochatflow.dpdns.org/fr/politique.html)
 
 > Si vous forkiez le projet, remplacez simplement `autochatflow.dpdns.org` par votre domaine ou l’URL GitHub Pages.
 
